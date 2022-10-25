@@ -1,6 +1,8 @@
-<h1> Sign Up </h1>
 
-<form action="<%= users_url %>" method="post">
+<h1> Log In </h1>
+
+<form action="<%= session_url %>" method="post">
+    <%= auth_token %>
     <label for="">Email:
         <input type="email" name="user[email]">
     </label>
@@ -9,5 +11,5 @@
         <input type="password" name="user[password]">
     </label>
     <br>
-    <input type="submit" value="Sign Up">
+    <input type="submit" value="Log In">
 </form>
